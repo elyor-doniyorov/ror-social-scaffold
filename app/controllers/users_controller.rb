@@ -13,17 +13,17 @@ class UsersController < ApplicationController
     @posts = @user.posts.ordered_by_most_recent
   end
 
-  # def confirm
-  #   @user = User.find(params[:id])
+  def confirm
+    @user = User.find(params[:id])
 
-  #   if current_user.confirm_friend(@user)
-  #     redirect_to root_path
-  #     flash[:notice] = 'Friend request accepted'
-  #   else
-  #     redirect_to root_path
-  #     flash[:alert] = 'something went wrong with accepting the invite.'
-  #   end
-  # end
+    if current_user.confirm_friend(@user)
+      redirect_to root_path
+      flash[:notice] = 'Friend request accepted'
+    else
+      redirect_to root_path
+      flash[:alert] = 'something went wrong with accepting the invite.'
+    end
+  end
 
   # def deny
   #   @user = User.find(params[:id])
