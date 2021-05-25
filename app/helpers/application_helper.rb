@@ -81,11 +81,11 @@ module ApplicationHelper
     end
   end
 
-  # def alert?
-  #   return unless alert.present?
+  def alert?
+    return unless alert.present?
 
-  #   content_tag(:div, class: 'notice') do
-  #     content_tag(:p, alert)
-  #   end
-  # end
+    content_tag(:div, class: 'notice') do
+      content_tag(:p, alert)
+    end
+  end
 end
