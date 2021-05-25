@@ -19,9 +19,9 @@ class User < ApplicationRecord
   has_many :inverse_friendships, -> { where confirmed: false }, class_name: 'Friendship', foreign_key: 'friend_id'
   has_many :friend_requests, through: :inverse_friendships, source: :user
 
-  # def friend?(user)
-  #   friends.include?(user)
-  # end
+  def friend?(user)
+    friends.include?(user)
+  end
 
   # def friends_and_own_posts
   #   Post.where(user: (friends.to_a << self))
