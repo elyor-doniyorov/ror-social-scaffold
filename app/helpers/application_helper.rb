@@ -53,16 +53,16 @@ module ApplicationHelper
     mutual.uniq
   end
 
-  # def all_users(user)
-  #   return unless user != current_user
+  def all_users(user)
+    return unless user != current_user
 
-  #   content_tag(:div) do
-  #     content_tag(:h4, user.name) +
-  #       (link_to 'See Profile', user_path(user), class: 'profile-link') +
-  #       btn_send(user) +
-  #       btn_mutual(user)
-  #   end
-  # end
+    content_tag(:div) do
+      content_tag(:h4, user.name) +
+        (link_to 'See Profile', user_path(user), class: 'profile-link') +
+        btn_send(user) +
+        btn_mutual(user)
+    end
+  end
 
   # def user_sessionss
   #   if current_user
