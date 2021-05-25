@@ -21,7 +21,7 @@ class UsersController < ApplicationController
       flash[:notice] = 'Friend request accepted'
     else
       redirect_to root_path
-      flash[:alert] = 'something went wrong with accepting the invite.'
+      flash.now[:alert] = 'Something went wrong with accepting the invite.'
     end
   end
 
