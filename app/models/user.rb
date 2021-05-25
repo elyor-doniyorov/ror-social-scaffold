@@ -27,10 +27,10 @@ class User < ApplicationRecord
     Post.where(user: (friends.to_a << self))
   end
 
-  # def confirm_friend(user)
-  #   friend = Friendship.find_by(user_id: user.id, friend_id: id)
-  #   friend.confirmed = true
-  #   friend.save
-  #   Friendship.create!(friend_id: user.id, user_id: id, confirmed: true)
-  # end
+  def confirm_friend(user)
+    friend = Friendship.find_by(user_id: user.id, friend_id: id)
+    friend.confirmed = true
+    friend.save
+    Friendship.create!(friend_id: user.id, user_id: id, confirmed: true)
+  end
 end
