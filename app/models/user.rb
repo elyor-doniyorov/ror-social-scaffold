@@ -23,9 +23,9 @@ class User < ApplicationRecord
     friends.include?(user)
   end
 
-  # def friends_and_own_posts
-  #   Post.where(user: (friends.to_a << self))
-  # end
+  def friends_and_own_posts
+    Post.where(user: (friends.to_a << self))
+  end
 
   # def confirm_friend(user)
   #   friend = Friendship.find_by(user_id: user.id, friend_id: id)
