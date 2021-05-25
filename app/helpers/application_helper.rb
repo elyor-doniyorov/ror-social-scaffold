@@ -30,13 +30,13 @@ module ApplicationHelper
     flash[:notice] = 'this person already sent a request to you'
   end
 
-  # def btn_send(user)
-  #   return if current_user.pending_friends.include?(user)
-  #   return if current_user.friends.include?(user)
-  #   return if current_user.friend_requests.include?(user)
+  def btn_send(user)
+    return if current_user.pending_friends.include?(user)
+    return if current_user.friends.include?(user)
+    return if current_user.friend_requests.include?(user)
 
-  #   (button_to 'Send request', user_friendships_path(user), method: :post)
-  # end
+    (button_to 'Send request', user_friendships_path(user), method: :post)
+  end
 
   # def btn_mutual(user)
   #   return unless user.friends.include?(nil)
