@@ -38,20 +38,20 @@ module ApplicationHelper
     (button_to 'Send request', user_friendships_path(user), method: :post)
   end
 
-  # def btn_mutual(user)
-  #   return unless user.friends.include?(nil)
+  def btn_mutual(user)
+    return unless user.friends.include?(nil)
 
-  #   mutual = []
-  #   user.friends.map do |my_friends|
-  #     if current_user.friends.map | mutual_friends |
-  #        mutual_friends == my_friends
-  #       mutual.push(my_friends.name)
-  #     else
-  #       mutual
-  #     end
-  #   end
-  #   mutual.uniq
-  # end
+    mutual = []
+    user.friends.map do |my_friends|
+      if current_user.friends.map | mutual_friends |
+         mutual_friends == my_friends
+        mutual.push(my_friends.name)
+      else
+        mutual
+      end
+    end
+    mutual.uniq
+  end
 
   # def all_users(user)
   #   return unless user != current_user
