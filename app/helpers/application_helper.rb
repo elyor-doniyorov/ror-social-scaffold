@@ -16,12 +16,12 @@ module ApplicationHelper
     end
   end
 
-  # def already_sended?(user)
-  #   return unless current_user.pending_friends.any? { |friendship| friendship.friends == user }
+  def already_sended?(user)
+    return unless current_user.pending_friends.any? { |friendship| friendship.friends == user }
 
-  #   redirect_to root_path
-  #   flash[:notice] = 'you already sent a request to this person'
-  # end
+    redirect_to root_path
+    flash[:notice] = 'you already sent a request to this person'
+  end
 
   # def sended_to_us?(_user)
   #   return unless current_user.inverse_friendships.any? { |friendship| friendship.user == current_user }
