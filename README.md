@@ -1,15 +1,25 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
 # Scaffold for social media app with Ruby on Rails
 
 > This repo includes intial code for social media app with basic styling. Its purpose is to be a starting point for Microverse students.
 
 ## Built With
 
-- Ruby v2.7.0
-- Ruby on Rails v5.2.4
+- Ruby v3.0.0
+- Ruby on Rails v6.1.3
+
+## Sreenshot
+<div align="center">
+    <img src="app/assets/images/screenshot.png" width="400px"</img> 
+</div>
+
+
 
 ## Live Demo
 
-TBA
+Dployement ongoing
+[Social Media Project](https://cryptic-plateau-82387.herokuapp.com/users/sign_in)
 
 
 ## Getting Started
@@ -18,8 +28,8 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-Ruby: 2.6.3
-Rails: 5.2.3
+Ruby: 2.7.2
+Rails: 6.1.3
 Postgres: >=9.5
 
 ### Setup
@@ -67,9 +77,16 @@ Open `http://localhost:3000/` in your browser.
 
 ### Deployment
 
-TBA
+https://cryptic-plateau-82387.herokuapp.com/users/sign_in
 
 ## Authors
+
+
+👤 Elyor Doniyorov
+
+- GitHub: [@elyor-doniyorov](https://github.com/elyor-doniyorov)
+- LinkedIn: [elyor-doniyorov](https://www.linkedin.com/in/elyor-doniyorov/)
+
 
 TBA
 
