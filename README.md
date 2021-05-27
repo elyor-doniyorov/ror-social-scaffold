@@ -11,7 +11,7 @@
 
 ## Sreenshot
 <div align="center">
-    <img src="app/assets/images/screenshot.png" width="400px"</img> 
+    <img src="/images/screenshot.png" width="400px"</img> 
 </div>
 
 
